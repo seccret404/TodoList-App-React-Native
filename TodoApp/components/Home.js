@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, View, Text, StyleSheet, Image, ScrollView } from "react-native";
+import Footer from "./footer";
 import Clock from "./icon/Clock";
 
 
@@ -51,6 +52,9 @@ export default function Home({ navigation }) {
       <ScrollView>
       {renderBoxTasks()}
       </ScrollView>
+      <View style={style.footer}>
+        <Footer/>        
+      </View>
     </View>
   );
 }
@@ -59,6 +63,8 @@ const style = StyleSheet.create({
   container: {
     backgroundColor: "#116A7B",
     height: "100%",
+    flex:1,
+
   },
   head: {
     flexDirection: "row", // Mengatur orientasi ke horizontal (secara default adalah vertical)
