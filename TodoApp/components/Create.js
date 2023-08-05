@@ -3,9 +3,9 @@ import Footer from "./footer";
 import {View,Text,TouchableOpacity,TextInput,StyleSheet,Image,FlatList,ScrollView}  from "react-native";
 
 const data = [
-     { id: "1", label: "Option 1", imageSource: require("./img/icon.png") },
-     { id: "2", label: "Option 2", imageSource: require("./img/icon.png") },
-     { id: "3", label: "Option 3", imageSource: require("./img/icon.png") },
+     { id: "1",  imageSource: require("./img/icon.png") },
+     { id: "2", imageSource: require("./img/icon.png") },
+     { id: "3",  imageSource: require("./img/icon.png") },
    ];
 export default function Create(){
      const [time, setTime] = useState("");
@@ -204,7 +204,8 @@ const style = StyleSheet.create({
           height:50,
           textAlign:"center",
           borderRadius:10,
-          fontWeight:"bold"     
+          fontWeight:"bold",
+          color:"#116A7B"     
      },
      end:{
           color:"#ffffff",
